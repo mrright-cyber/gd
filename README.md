@@ -6,8 +6,6 @@
   青龙安装Bot监控
   <br>
 </h1>
-- [x]  2022.4.9 已兼容青龙`2.12.x`版本路经
-
 ## 1.进入容器内
 
 ``` bash
@@ -29,7 +27,7 @@ rm -f install.sh* && wget -q https://raw.githubusercontent.com/mrright-cyber/gd/
 
 ##### 青龙存放位置：`/ql/config` 或` /ql/data/config`
 
-* [x] `bot.json  `  填写你的机器人token 用户id等参数
+* [x] `bot.json`  填写你的机器人 token 用户id等参数
 * [x] `diybotset.json` 填写监控群组频道id等参数
 * [x] `jk.json` 自定义监控变量和应对脚本路径
 
@@ -49,8 +47,6 @@ Ps: 可参考本仓库 conf/xxx.json
 ```bash
 #青龙2.10x
 cd /ql/jbot/
-#青龙2.12.x版本
-cd /ql/data/jbot/
 
 #第一次启动是这样启动，后续启动参考底部相关命令
 pm2 start ecosystem.config.js 
@@ -67,7 +63,7 @@ tail -100f /ql/data/log/bot/run.log
 
 ​											
 
-- [x] 如TG收到机器人信息，证明你填写的机器人参数是正确的∆。
+- [x] 如TG收到机器人信息，证明你填写的机器人参数是正确的。
 
 ![图2：完成登录，tg机器人发通知](https://raw.githubusercontent.com/curtinlv/gd/main/img/p2.png)
 
