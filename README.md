@@ -7,58 +7,38 @@
   <br>
 </h1>
 
-## 1.进入容器内
+## 1.进入青龙容器内
 
 ``` bash
-# 进入青龙容器内，“ql” 为容器名字。
+# 进入青龙容器内，“ql” 为容器名字，根据自己的容器名修改
 docker exec -it ql /bin/bash
 ```
 
-## 2.安装依赖
+## 2.一键安装
 
-- [x] 一键安装
-
-```
+``` shell
 rm -f install.sh* && wget -q https://raw.githubusercontent.com/mrright-cyber/gd/main/install.sh && bash install.sh
 ```
 
-
-
-## 3.配置tg机器人参数
-
-##### 青龙存放位置：`/ql/config` 或` /ql/data/config`
+## 3.配置 TG 机器人参数
 
 * [x] `bot.json`  填写你的机器人 token 用户id等参数
 * [x] `diybotset.json` 填写监控群组频道id等参数
 * [x] `jk.json` 自定义监控变量和应对脚本路径
 
-```bash
-#登录青龙面板
-菜单【配置文件】右上角选择对应配置文件进行编辑
-bot.json
-diybotset.json
-
-Ps: 可参考本仓库 conf/xxx.json
-```
-
-
-
 ## 4.启动机器人
 
 ```bash
-#青龙2.10x
+# 进入对应目录
 cd /ql/jbot/
 
-#第一次启动是这样启动，后续启动参考底部相关命令
+# 第一次启动是这样启动，后续启动参考底部相关命令
 pm2 start ecosystem.config.js 
-#查看运行状态
+# 查看 jbot 运行状态
 pm2 status jbot 
 
-# 查看日志：看看有没有报错。
+# 查看日志
 tail -100f /ql/log/bot/run.log
-#青龙2.12
-tail -100f /ql/data/log/bot/run.log
-#终止查看日志 按 Ctrl+C
 
 ```
 
