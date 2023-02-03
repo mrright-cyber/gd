@@ -11,7 +11,7 @@
 ## 1.进入容器内
 
 ``` bash
-# 进入青龙容器内，“qinglong” 为容器名字。
+# 进入青龙容器内，“ql” 为容器名字。
 docker exec -it ql /bin/bash
 ```
 
