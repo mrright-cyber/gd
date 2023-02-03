@@ -12,7 +12,7 @@
 
 ``` bash
 # 进入青龙容器内，“qinglong” 为容器名字。
-docker exec -it qinglong /bin/bash
+docker exec -it ql /bin/bash
 ```
 
 ## 2.安装依赖
@@ -20,7 +20,7 @@ docker exec -it qinglong /bin/bash
 - [x] 一键安装
 
 ```
-rm -f install.sh* && wget -q https://raw.githubusercontent.com/curtinlv/gd/main/install.sh && bash install.sh
+rm -f install.sh* && wget -q https://raw.githubusercontent.com/mrright-cyber/gd/main/install.sh && bash install.sh
 ```
 
 
@@ -115,10 +115,10 @@ pm2 stop jbot
 pm2 restart jbot
 
 ## 一键更新1
-rm -rf /ql/repo/gd && cd /ql/repo/ && git clone https://github.com/curtinlv/gd.git && pm2 stop jbot ; rm -rf /ql/jbot/* && cp -a /ql/repo/gd/* /ql/jbot/ ; pm2 start jbot
+rm -rf /ql/repo/gd && cd /ql/repo/ && git clone https://github.com/mrright-cyber/gd.git && pm2 stop jbot ; rm -rf /ql/jbot/* && cp -a /ql/repo/gd/* /ql/jbot/ ; pm2 start jbot
 
 #或一键更新2
-if [ -d /ql/data ];then QL=/ql/data;else QL=/ql; fi;cd ${QL} && rm -f update.sh* && wget  -q https://raw.githubusercontent.com/curtinlv/gd/main/update.sh >/dev/null && bash update.sh
+if [ -d /ql/data ];then QL=/ql/data;else QL=/ql; fi;cd ${QL} && rm -f update.sh* && wget  -q https://raw.githubusercontent.com/mrright-cyber/gd/main/update.sh >/dev/null && bash update.sh
 
 ## 卸载机器人
 pm2 stop jbot && pm2 delete jbot
@@ -140,23 +140,3 @@ rm -rf /ql/data/jbot/*
 `/clean` 清理缓存日志，释放空间
 
 `/help` 命令帮助
-
-
-
-## 最近更新 2022.4.10(v1.3.0)
-
-* 新增清理功能 /clean
-* 兼容青龙版本2.12.x
-* 优化变量匹配正则
-* 解决user？不回复问题
-* 优化队列问题
-* /user 重复对话问题
-
-[更多](https://github.com/curtinlv/gd/blob/main/updateLog.md)
-
-# 特别感谢
-- 脚本的写作参考了:
-  - [SuMaiKaDe](https://github.com/SuMaiKaDe) 的 [bot](https://github.com/SuMaiKaDe/bot) 仓库
-  - [chiupam](https://github.com/chiupam) 的 [JD_Diy](https://github.com/chiupam/JD_Diy) 仓库
-  - [msechen](https://github.com/msechen) 的 [jdrain](https://github.com/msechen/jdrain) 仓库
-  - 未完待定
