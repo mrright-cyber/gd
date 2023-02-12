@@ -11,5 +11,5 @@ async def mycp(event):
         num = 1
     reply = await event.get_reply_message()
     await event.delete()
-    for _ in range(1, num):
+    for _ in range(0, num):
         await reply.forward_to(int(event.chat_id))
