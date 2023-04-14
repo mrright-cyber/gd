@@ -27,7 +27,7 @@
 
   "jk":[
        {
-           "isOpen": flase,
+           "isOpen": false,
            "name": "电脑配件",
            "envName": "computer_activityId",
            "scriptPath": "jd_computer.js"
