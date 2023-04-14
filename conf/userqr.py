@@ -1,7 +1,7 @@
 # 1、将该文件拖入/root/data/docker_data/ql-jh1/jbot/user 中
 # 2、在容器中运行该文件 python3 userqr.py
 # 3、将生成user.session文件，拖入到/root/data/docker_data/ql-jh1/config
-# 4、进入到bot输入/user，选择开启user，不要选择重新登录
+# 4、进入到bot输入/user，点击开启user，不要选择重新登录
 import telethon
 from telethon import TelegramClient
 from qrcode import QRCode
