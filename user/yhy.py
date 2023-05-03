@@ -94,7 +94,7 @@ def memberBringActPage(authorCode):
                 rewardslist.append(f'级别{stage}: 需助力{inviteNum}人，奖品: {rewardName}，库存: {rewardNum}件\n')
             if len(rewardslist) != 0:
                 shopUrl = f"https://shop.m.jd.com/?venderId={venderId}"
-                actUrl = f"http://jd.lolkda.top/?url=https://pro.m.jd.com/mall/active/dVF7gQUVKyUcuSsVhuya5d2XD4F/index.html?code={authorCode}"
+                actUrl = f"https://www.yanyuwangluo.cn/jd/?url=https://pro.m.jd.com/mall/active/dVF7gQUVKyUcuSsVhuya5d2XD4F/index.html?code={authorCode}"
                 return f"店铺名称: [{brandName}]({shopUrl})\n活动地址: [点我跳转]({actUrl})\n活动变量: `{authorCode}`\n当前活动奖品如下: \n{str(''.join(rewardslist))}"
     except Exception as e:
         return None
