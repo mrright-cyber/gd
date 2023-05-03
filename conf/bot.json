@@ -1,9 +1,9 @@
 {
     "//": "//开头的的都是注释，不要动，剩下的都按要求改自己的",
     "//user_id": "↓↓↓  你的USERID，去除双引号  ↓↓↓",
-    "user_id": 919108,
+    "user_id": 91910891,
     "//bot_token": "↓↓↓  你的机器人TOKEN  ↓↓↓",
-    "bot_token": "54859430:AAE3ccr5oZJe38hyRkZ2QvHMNz2LLFMDTlI",
+    "bot_token": "5485943081:AAE3ccr5oZJe38hyRkZ2QvHMNz2LLFMDTlI",
     "//api_id": "↓↓↓  https://my.telegram.org 在该网站申请到的id  ↓↓↓",
     "api_id": "9327480",
     "//api_hash": "↓↓↓  https://my.telegram.org 在该网站申请到的hash  ↓↓↓",
